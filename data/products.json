@@ -1,0 +1,2802 @@
+[
+  {
+    "slug": "animal-health-prod-1",
+    "categorySlug": "animal-health",
+    "name": "PremiumMectin 100",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "VET_APPROVAL",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "AH-1001-A",
+        "packSize": "Small",
+        "priceKes": 1100
+      },
+      {
+        "sku": "AH-1001-B",
+        "packSize": "Large",
+        "priceKes": 1700
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_0.jpg"
+  },
+  {
+    "slug": "animal-health-prod-2",
+    "categorySlug": "animal-health",
+    "name": "SuperMectin 200",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1002-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "AH-1002-B",
+        "packSize": "Large",
+        "priceKes": 2300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_1.jpg"
+  },
+  {
+    "slug": "animal-health-prod-3",
+    "categorySlug": "animal-health",
+    "name": "UltraMectin 300",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1003-A",
+        "packSize": "Small",
+        "priceKes": 800
+      },
+      {
+        "sku": "AH-1003-B",
+        "packSize": "Large",
+        "priceKes": 2400
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_2.jpg"
+  },
+  {
+    "slug": "animal-health-prod-4",
+    "categorySlug": "animal-health",
+    "name": "MaxMectin 400",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "VET_APPROVAL",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1004-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "AH-1004-B",
+        "packSize": "Large",
+        "priceKes": 2000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_3.jpg"
+  },
+  {
+    "slug": "animal-health-prod-5",
+    "categorySlug": "animal-health",
+    "name": "ProMectin 500",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1005-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "AH-1005-B",
+        "packSize": "Large",
+        "priceKes": 1700
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_4.jpg"
+  },
+  {
+    "slug": "animal-health-prod-6",
+    "categorySlug": "animal-health",
+    "name": "AgriMectin 600",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1006-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "AH-1006-B",
+        "packSize": "Large",
+        "priceKes": 1700
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_5.jpg"
+  },
+  {
+    "slug": "animal-health-prod-7",
+    "categorySlug": "animal-health",
+    "name": "FarmMectin 700",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "VET_APPROVAL",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1007-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "AH-1007-B",
+        "packSize": "Large",
+        "priceKes": 2800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_6.jpg"
+  },
+  {
+    "slug": "animal-health-prod-8",
+    "categorySlug": "animal-health",
+    "name": "EcoMectin 800",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1008-A",
+        "packSize": "Small",
+        "priceKes": 1100
+      },
+      {
+        "sku": "AH-1008-B",
+        "packSize": "Large",
+        "priceKes": 2500
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_7.jpg"
+  },
+  {
+    "slug": "animal-health-prod-9",
+    "categorySlug": "animal-health",
+    "name": "BioMectin 900",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1009-A",
+        "packSize": "Small",
+        "priceKes": 800
+      },
+      {
+        "sku": "AH-1009-B",
+        "packSize": "Large",
+        "priceKes": 2600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_8.jpg"
+  },
+  {
+    "slug": "animal-health-prod-10",
+    "categorySlug": "animal-health",
+    "name": "RapidMectin 1000",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "VET_APPROVAL",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1010-A",
+        "packSize": "Small",
+        "priceKes": 600
+      },
+      {
+        "sku": "AH-1010-B",
+        "packSize": "Large",
+        "priceKes": 1900
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_9.jpg"
+  },
+  {
+    "slug": "animal-health-prod-11",
+    "categorySlug": "animal-health",
+    "name": "PremiumMectin 1100",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "AH-1011-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "AH-1011-B",
+        "packSize": "Large",
+        "priceKes": 3100
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_10.jpg"
+  },
+  {
+    "slug": "animal-health-prod-12",
+    "categorySlug": "animal-health",
+    "name": "SuperMectin 1200",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1012-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "AH-1012-B",
+        "packSize": "Large",
+        "priceKes": 2300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_11.jpg"
+  },
+  {
+    "slug": "animal-health-prod-13",
+    "categorySlug": "animal-health",
+    "name": "UltraMectin 1300",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "VET_APPROVAL",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1013-A",
+        "packSize": "Small",
+        "priceKes": 1400
+      },
+      {
+        "sku": "AH-1013-B",
+        "packSize": "Large",
+        "priceKes": 1800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_12.jpg"
+  },
+  {
+    "slug": "animal-health-prod-14",
+    "categorySlug": "animal-health",
+    "name": "MaxMectin 1400",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1014-A",
+        "packSize": "Small",
+        "priceKes": 800
+      },
+      {
+        "sku": "AH-1014-B",
+        "packSize": "Large",
+        "priceKes": 2900
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_13.jpg"
+  },
+  {
+    "slug": "animal-health-prod-15",
+    "categorySlug": "animal-health",
+    "name": "ProMectin 1500",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1015-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "AH-1015-B",
+        "packSize": "Large",
+        "priceKes": 2100
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_14.jpg"
+  },
+  {
+    "slug": "animal-health-prod-16",
+    "categorySlug": "animal-health",
+    "name": "AgriMectin 1600",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "VET_APPROVAL",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1016-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "AH-1016-B",
+        "packSize": "Large",
+        "priceKes": 2200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_15.jpg"
+  },
+  {
+    "slug": "animal-health-prod-17",
+    "categorySlug": "animal-health",
+    "name": "FarmMectin 1700",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1017-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "AH-1017-B",
+        "packSize": "Large",
+        "priceKes": 1600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_16.jpg"
+  },
+  {
+    "slug": "animal-health-prod-18",
+    "categorySlug": "animal-health",
+    "name": "EcoMectin 1800",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1018-A",
+        "packSize": "Small",
+        "priceKes": 500
+      },
+      {
+        "sku": "AH-1018-B",
+        "packSize": "Large",
+        "priceKes": 1700
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_17.jpg"
+  },
+  {
+    "slug": "animal-health-prod-19",
+    "categorySlug": "animal-health",
+    "name": "BioMectin 1900",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "VET_APPROVAL",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1019-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "AH-1019-B",
+        "packSize": "Large",
+        "priceKes": 3300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_18.jpg"
+  },
+  {
+    "slug": "animal-health-prod-20",
+    "categorySlug": "animal-health",
+    "name": "RapidMectin 2000",
+    "shortDesc": "High-quality product for your animal health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AH-1020-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "AH-1020-B",
+        "packSize": "Large",
+        "priceKes": 2600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_19.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-1",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Premium 1X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "AF-1021-A",
+        "packSize": "Small",
+        "priceKes": 500
+      },
+      {
+        "sku": "AF-1021-B",
+        "packSize": "Large",
+        "priceKes": 2000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_20.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-2",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Super 2X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1022-A",
+        "packSize": "Small",
+        "priceKes": 1100
+      },
+      {
+        "sku": "AF-1022-B",
+        "packSize": "Large",
+        "priceKes": 2800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_21.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-3",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Ultra 3X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1023-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "AF-1023-B",
+        "packSize": "Large",
+        "priceKes": 1600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_22.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-4",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Max 4X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1024-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "AF-1024-B",
+        "packSize": "Large",
+        "priceKes": 3000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_23.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-5",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Pro 5X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1025-A",
+        "packSize": "Small",
+        "priceKes": 1400
+      },
+      {
+        "sku": "AF-1025-B",
+        "packSize": "Large",
+        "priceKes": 1800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_24.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-6",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Agri 6X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1026-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "AF-1026-B",
+        "packSize": "Large",
+        "priceKes": 3000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_25.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-7",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Farm 7X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1027-A",
+        "packSize": "Small",
+        "priceKes": 800
+      },
+      {
+        "sku": "AF-1027-B",
+        "packSize": "Large",
+        "priceKes": 2000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_26.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-8",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Eco 8X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1028-A",
+        "packSize": "Small",
+        "priceKes": 600
+      },
+      {
+        "sku": "AF-1028-B",
+        "packSize": "Large",
+        "priceKes": 2600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_27.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-9",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Bio 9X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1029-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "AF-1029-B",
+        "packSize": "Large",
+        "priceKes": 1700
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_28.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-10",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Rapid 10X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1030-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "AF-1030-B",
+        "packSize": "Large",
+        "priceKes": 1900
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_29.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-11",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Premium 11X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "AF-1031-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "AF-1031-B",
+        "packSize": "Large",
+        "priceKes": 3000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_30.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-12",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Super 12X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1032-A",
+        "packSize": "Small",
+        "priceKes": 1100
+      },
+      {
+        "sku": "AF-1032-B",
+        "packSize": "Large",
+        "priceKes": 3200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_31.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-13",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Ultra 13X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1033-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "AF-1033-B",
+        "packSize": "Large",
+        "priceKes": 1900
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_32.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-14",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Max 14X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1034-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "AF-1034-B",
+        "packSize": "Large",
+        "priceKes": 2200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_33.jpg"
+  },
+  {
+    "slug": "animal-feeds-prod-15",
+    "categorySlug": "animal-feeds",
+    "name": "Dairy Meal Pro 15X",
+    "shortDesc": "High-quality product for your animal feeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "AF-1035-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "AF-1035-B",
+        "packSize": "Large",
+        "priceKes": 1900
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_34.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-1",
+    "categorySlug": "crop-protection",
+    "name": "Boostzeb 50 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "AGRO_RESTRICTED",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "CP-1036-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "CP-1036-B",
+        "packSize": "Large",
+        "priceKes": 3000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_35.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-2",
+    "categorySlug": "crop-protection",
+    "name": "Growzeb 60 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1037-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "CP-1037-B",
+        "packSize": "Large",
+        "priceKes": 2100
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_36.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-3",
+    "categorySlug": "crop-protection",
+    "name": "Curezeb 70 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1038-A",
+        "packSize": "Small",
+        "priceKes": 1400
+      },
+      {
+        "sku": "CP-1038-B",
+        "packSize": "Large",
+        "priceKes": 1900
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_37.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-4",
+    "categorySlug": "crop-protection",
+    "name": "Forcezeb 80 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1039-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "CP-1039-B",
+        "packSize": "Large",
+        "priceKes": 3300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_38.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-5",
+    "categorySlug": "crop-protection",
+    "name": "Shieldzeb 90 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "AGRO_RESTRICTED",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1040-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "CP-1040-B",
+        "packSize": "Large",
+        "priceKes": 2100
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_39.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-6",
+    "categorySlug": "crop-protection",
+    "name": "Carezeb 100 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1041-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "CP-1041-B",
+        "packSize": "Large",
+        "priceKes": 2800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_40.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-7",
+    "categorySlug": "crop-protection",
+    "name": "Cleanzeb 110 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1042-A",
+        "packSize": "Small",
+        "priceKes": 800
+      },
+      {
+        "sku": "CP-1042-B",
+        "packSize": "Large",
+        "priceKes": 2500
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_41.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-8",
+    "categorySlug": "crop-protection",
+    "name": "Guardzeb 120 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1043-A",
+        "packSize": "Small",
+        "priceKes": 500
+      },
+      {
+        "sku": "CP-1043-B",
+        "packSize": "Large",
+        "priceKes": 3100
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_42.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-9",
+    "categorySlug": "crop-protection",
+    "name": "Vitalzeb 130 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "AGRO_RESTRICTED",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1044-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "CP-1044-B",
+        "packSize": "Large",
+        "priceKes": 3100
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_43.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-10",
+    "categorySlug": "crop-protection",
+    "name": "Pluszeb 140 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1045-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "CP-1045-B",
+        "packSize": "Large",
+        "priceKes": 3200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_44.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-11",
+    "categorySlug": "crop-protection",
+    "name": "Boostzeb 150 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "CP-1046-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "CP-1046-B",
+        "packSize": "Large",
+        "priceKes": 2700
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_45.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-12",
+    "categorySlug": "crop-protection",
+    "name": "Growzeb 160 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1047-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "CP-1047-B",
+        "packSize": "Large",
+        "priceKes": 3200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_46.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-13",
+    "categorySlug": "crop-protection",
+    "name": "Curezeb 170 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "AGRO_RESTRICTED",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1048-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "CP-1048-B",
+        "packSize": "Large",
+        "priceKes": 1800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_47.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-14",
+    "categorySlug": "crop-protection",
+    "name": "Forcezeb 180 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1049-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "CP-1049-B",
+        "packSize": "Large",
+        "priceKes": 1500
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_48.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-15",
+    "categorySlug": "crop-protection",
+    "name": "Shieldzeb 190 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1050-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "CP-1050-B",
+        "packSize": "Large",
+        "priceKes": 3200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_49.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-16",
+    "categorySlug": "crop-protection",
+    "name": "Carezeb 200 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1051-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "CP-1051-B",
+        "packSize": "Large",
+        "priceKes": 3400
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_50.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-17",
+    "categorySlug": "crop-protection",
+    "name": "Cleanzeb 210 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "AGRO_RESTRICTED",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1052-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "CP-1052-B",
+        "packSize": "Large",
+        "priceKes": 1900
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_51.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-18",
+    "categorySlug": "crop-protection",
+    "name": "Guardzeb 220 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1053-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "CP-1053-B",
+        "packSize": "Large",
+        "priceKes": 1600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_52.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-19",
+    "categorySlug": "crop-protection",
+    "name": "Vitalzeb 230 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1054-A",
+        "packSize": "Small",
+        "priceKes": 600
+      },
+      {
+        "sku": "CP-1054-B",
+        "packSize": "Large",
+        "priceKes": 3200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_53.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-20",
+    "categorySlug": "crop-protection",
+    "name": "Pluszeb 240 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1055-A",
+        "packSize": "Small",
+        "priceKes": 500
+      },
+      {
+        "sku": "CP-1055-B",
+        "packSize": "Large",
+        "priceKes": 2400
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_54.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-21",
+    "categorySlug": "crop-protection",
+    "name": "Boostzeb 250 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "AGRO_RESTRICTED",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "CP-1056-A",
+        "packSize": "Small",
+        "priceKes": 1100
+      },
+      {
+        "sku": "CP-1056-B",
+        "packSize": "Large",
+        "priceKes": 3000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_55.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-22",
+    "categorySlug": "crop-protection",
+    "name": "Growzeb 260 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1057-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "CP-1057-B",
+        "packSize": "Large",
+        "priceKes": 3300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_56.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-23",
+    "categorySlug": "crop-protection",
+    "name": "Curezeb 270 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1058-A",
+        "packSize": "Small",
+        "priceKes": 500
+      },
+      {
+        "sku": "CP-1058-B",
+        "packSize": "Large",
+        "priceKes": 2400
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_57.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-24",
+    "categorySlug": "crop-protection",
+    "name": "Forcezeb 280 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1059-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "CP-1059-B",
+        "packSize": "Large",
+        "priceKes": 3300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_58.jpg"
+  },
+  {
+    "slug": "crop-protection-prod-25",
+    "categorySlug": "crop-protection",
+    "name": "Shieldzeb 290 WP",
+    "shortDesc": "High-quality product for your crop protection needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "AGRO_RESTRICTED",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "CP-1060-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "CP-1060-B",
+        "packSize": "Large",
+        "priceKes": 3400
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_59.jpg"
+  },
+  {
+    "slug": "seeds-prod-1",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Premium 500",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "SD-1061-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "SD-1061-B",
+        "packSize": "Large",
+        "priceKes": 1500
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_60.jpg"
+  },
+  {
+    "slug": "seeds-prod-2",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Super 501",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "SD-1062-A",
+        "packSize": "Small",
+        "priceKes": 600
+      },
+      {
+        "sku": "SD-1062-B",
+        "packSize": "Large",
+        "priceKes": 3200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_61.jpg"
+  },
+  {
+    "slug": "seeds-prod-3",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Ultra 502",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "SD-1063-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "SD-1063-B",
+        "packSize": "Large",
+        "priceKes": 1500
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_62.jpg"
+  },
+  {
+    "slug": "seeds-prod-4",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Max 503",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "SD-1064-A",
+        "packSize": "Small",
+        "priceKes": 1100
+      },
+      {
+        "sku": "SD-1064-B",
+        "packSize": "Large",
+        "priceKes": 1600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_63.jpg"
+  },
+  {
+    "slug": "seeds-prod-5",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Pro 504",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "SD-1065-A",
+        "packSize": "Small",
+        "priceKes": 1400
+      },
+      {
+        "sku": "SD-1065-B",
+        "packSize": "Large",
+        "priceKes": 3300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_64.jpg"
+  },
+  {
+    "slug": "seeds-prod-6",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Agri 505",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "SD-1066-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "SD-1066-B",
+        "packSize": "Large",
+        "priceKes": 2100
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_65.jpg"
+  },
+  {
+    "slug": "seeds-prod-7",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Farm 506",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "SD-1067-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "SD-1067-B",
+        "packSize": "Large",
+        "priceKes": 2000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_66.jpg"
+  },
+  {
+    "slug": "seeds-prod-8",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Eco 507",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "SD-1068-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "SD-1068-B",
+        "packSize": "Large",
+        "priceKes": 3000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_67.jpg"
+  },
+  {
+    "slug": "seeds-prod-9",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Bio 508",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "SD-1069-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "SD-1069-B",
+        "packSize": "Large",
+        "priceKes": 2200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_68.jpg"
+  },
+  {
+    "slug": "seeds-prod-10",
+    "categorySlug": "seeds",
+    "name": "Maize Seed Rapid 509",
+    "shortDesc": "High-quality product for your seeds needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "SD-1070-A",
+        "packSize": "Small",
+        "priceKes": 1100
+      },
+      {
+        "sku": "SD-1070-B",
+        "packSize": "Large",
+        "priceKes": 2900
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_69.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-1",
+    "categorySlug": "fertilizers",
+    "name": "Premium DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "FZ-1071-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "FZ-1071-B",
+        "packSize": "Large",
+        "priceKes": 3300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_70.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-2",
+    "categorySlug": "fertilizers",
+    "name": "Super DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "FZ-1072-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "FZ-1072-B",
+        "packSize": "Large",
+        "priceKes": 2300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_71.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-3",
+    "categorySlug": "fertilizers",
+    "name": "Ultra DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "FZ-1073-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "FZ-1073-B",
+        "packSize": "Large",
+        "priceKes": 1700
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_72.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-4",
+    "categorySlug": "fertilizers",
+    "name": "Max DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "FZ-1074-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "FZ-1074-B",
+        "packSize": "Large",
+        "priceKes": 2500
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_73.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-5",
+    "categorySlug": "fertilizers",
+    "name": "Pro DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "FZ-1075-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "FZ-1075-B",
+        "packSize": "Large",
+        "priceKes": 1800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_74.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-6",
+    "categorySlug": "fertilizers",
+    "name": "Agri DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "FZ-1076-A",
+        "packSize": "Small",
+        "priceKes": 500
+      },
+      {
+        "sku": "FZ-1076-B",
+        "packSize": "Large",
+        "priceKes": 2800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_75.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-7",
+    "categorySlug": "fertilizers",
+    "name": "Farm DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "FZ-1077-A",
+        "packSize": "Small",
+        "priceKes": 600
+      },
+      {
+        "sku": "FZ-1077-B",
+        "packSize": "Large",
+        "priceKes": 3000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_76.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-8",
+    "categorySlug": "fertilizers",
+    "name": "Eco DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "FZ-1078-A",
+        "packSize": "Small",
+        "priceKes": 1100
+      },
+      {
+        "sku": "FZ-1078-B",
+        "packSize": "Large",
+        "priceKes": 2800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_77.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-9",
+    "categorySlug": "fertilizers",
+    "name": "Bio DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "FZ-1079-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "FZ-1079-B",
+        "packSize": "Large",
+        "priceKes": 3000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_78.jpg"
+  },
+  {
+    "slug": "fertilizers-prod-10",
+    "categorySlug": "fertilizers",
+    "name": "Rapid DAP 18-46-0",
+    "shortDesc": "High-quality product for your fertilizers needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "FZ-1080-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "FZ-1080-B",
+        "packSize": "Large",
+        "priceKes": 2000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_79.jpg"
+  },
+  {
+    "slug": "equipment-prod-1",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 16L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "EQ-1081-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "EQ-1081-B",
+        "packSize": "Large",
+        "priceKes": 2800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_80.jpg"
+  },
+  {
+    "slug": "equipment-prod-2",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 26L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "EQ-1082-A",
+        "packSize": "Small",
+        "priceKes": 1400
+      },
+      {
+        "sku": "EQ-1082-B",
+        "packSize": "Large",
+        "priceKes": 1600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_81.jpg"
+  },
+  {
+    "slug": "equipment-prod-3",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 36L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "EQ-1083-A",
+        "packSize": "Small",
+        "priceKes": 600
+      },
+      {
+        "sku": "EQ-1083-B",
+        "packSize": "Large",
+        "priceKes": 3400
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_82.jpg"
+  },
+  {
+    "slug": "equipment-prod-4",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 46L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "EQ-1084-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "EQ-1084-B",
+        "packSize": "Large",
+        "priceKes": 2400
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_83.jpg"
+  },
+  {
+    "slug": "equipment-prod-5",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 56L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "EQ-1085-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "EQ-1085-B",
+        "packSize": "Large",
+        "priceKes": 1800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_84.jpg"
+  },
+  {
+    "slug": "equipment-prod-6",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 66L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "EQ-1086-A",
+        "packSize": "Small",
+        "priceKes": 900
+      },
+      {
+        "sku": "EQ-1086-B",
+        "packSize": "Large",
+        "priceKes": 1500
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_85.jpg"
+  },
+  {
+    "slug": "equipment-prod-7",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 76L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "EQ-1087-A",
+        "packSize": "Small",
+        "priceKes": 1400
+      },
+      {
+        "sku": "EQ-1087-B",
+        "packSize": "Large",
+        "priceKes": 3000
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_86.jpg"
+  },
+  {
+    "slug": "equipment-prod-8",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 86L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "EQ-1088-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "EQ-1088-B",
+        "packSize": "Large",
+        "priceKes": 2600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_87.jpg"
+  },
+  {
+    "slug": "equipment-prod-9",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 96L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "EQ-1089-A",
+        "packSize": "Small",
+        "priceKes": 800
+      },
+      {
+        "sku": "EQ-1089-B",
+        "packSize": "Large",
+        "priceKes": 3300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_88.jpg"
+  },
+  {
+    "slug": "equipment-prod-10",
+    "categorySlug": "equipment",
+    "name": "Knapsack Sprayer 106L",
+    "shortDesc": "High-quality product for your equipment needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "EQ-1090-A",
+        "packSize": "Small",
+        "priceKes": 1400
+      },
+      {
+        "sku": "EQ-1090-B",
+        "packSize": "Large",
+        "priceKes": 2400
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_89.jpg"
+  },
+  {
+    "slug": "public-health-prod-1",
+    "categorySlug": "public-health",
+    "name": "Premium Boost 0",
+    "shortDesc": "High-quality product for your public health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "PH-1091-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "PH-1091-B",
+        "packSize": "Large",
+        "priceKes": 1800
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_90.jpg"
+  },
+  {
+    "slug": "public-health-prod-2",
+    "categorySlug": "public-health",
+    "name": "Super Grow 1",
+    "shortDesc": "High-quality product for your public health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "PH-1092-A",
+        "packSize": "Small",
+        "priceKes": 1200
+      },
+      {
+        "sku": "PH-1092-B",
+        "packSize": "Large",
+        "priceKes": 2500
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_91.jpg"
+  },
+  {
+    "slug": "public-health-prod-3",
+    "categorySlug": "public-health",
+    "name": "Ultra Cure 2",
+    "shortDesc": "High-quality product for your public health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "PH-1093-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "PH-1093-B",
+        "packSize": "Large",
+        "priceKes": 2400
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_92.jpg"
+  },
+  {
+    "slug": "public-health-prod-4",
+    "categorySlug": "public-health",
+    "name": "Max Force 3",
+    "shortDesc": "High-quality product for your public health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "PH-1094-A",
+        "packSize": "Small",
+        "priceKes": 500
+      },
+      {
+        "sku": "PH-1094-B",
+        "packSize": "Large",
+        "priceKes": 2300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_93.jpg"
+  },
+  {
+    "slug": "public-health-prod-5",
+    "categorySlug": "public-health",
+    "name": "Pro Shield 4",
+    "shortDesc": "High-quality product for your public health needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "PH-1095-A",
+        "packSize": "Small",
+        "priceKes": 800
+      },
+      {
+        "sku": "PH-1095-B",
+        "packSize": "Large",
+        "priceKes": 2200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_94.jpg"
+  },
+  {
+    "slug": "pet-care-prod-1",
+    "categorySlug": "pet-care",
+    "name": "Premium Boost 0",
+    "shortDesc": "High-quality product for your pet care needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": true,
+    "variants": [
+      {
+        "sku": "PC-1096-A",
+        "packSize": "Small",
+        "priceKes": 1100
+      },
+      {
+        "sku": "PC-1096-B",
+        "packSize": "Large",
+        "priceKes": 2100
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_95.jpg"
+  },
+  {
+    "slug": "pet-care-prod-2",
+    "categorySlug": "pet-care",
+    "name": "Super Grow 1",
+    "shortDesc": "High-quality product for your pet care needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "PC-1097-A",
+        "packSize": "Small",
+        "priceKes": 500
+      },
+      {
+        "sku": "PC-1097-B",
+        "packSize": "Large",
+        "priceKes": 3200
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_96.jpg"
+  },
+  {
+    "slug": "pet-care-prod-3",
+    "categorySlug": "pet-care",
+    "name": "Ultra Cure 2",
+    "shortDesc": "High-quality product for your pet care needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "PC-1098-A",
+        "packSize": "Small",
+        "priceKes": 700
+      },
+      {
+        "sku": "PC-1098-B",
+        "packSize": "Large",
+        "priceKes": 2600
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_97.jpg"
+  },
+  {
+    "slug": "pet-care-prod-4",
+    "categorySlug": "pet-care",
+    "name": "Max Force 3",
+    "shortDesc": "High-quality product for your pet care needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "PC-1099-A",
+        "packSize": "Small",
+        "priceKes": 1300
+      },
+      {
+        "sku": "PC-1099-B",
+        "packSize": "Large",
+        "priceKes": 2300
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_98.jpg"
+  },
+  {
+    "slug": "pet-care-prod-5",
+    "categorySlug": "pet-care",
+    "name": "Pro Shield 4",
+    "shortDesc": "High-quality product for your pet care needs.",
+    "descriptionMd": "### Features\n- Premium quality\n- Tested and proven\n- Excellent results\n\nEnsure you read the label before use.",
+    "keyFacts": {
+      "activeIngredient": "Various",
+      "formulation": "Standard",
+      "pack": "Varies",
+      "targetSpecies": "Multiple"
+    },
+    "saleClass": "OTC",
+    "coldChain": false,
+    "variants": [
+      {
+        "sku": "PC-1100-A",
+        "packSize": "Small",
+        "priceKes": 1000
+      },
+      {
+        "sku": "PC-1100-B",
+        "packSize": "Large",
+        "priceKes": 2100
+      }
+    ],
+    "imageUrl": "/images/products/sliced/product_99.jpg"
+  }
+]

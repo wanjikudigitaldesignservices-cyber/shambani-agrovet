@@ -1,0 +1,346 @@
+<USER_REQUEST>
+# AGROVET PLATFORM — MASTER BUILD PROMPT
+**B-format · 16-layer production stack · Antigravity (Gemini 3.1 Pro) → GitHub → Vercel (frontend + API functions) + Neon (Postgres)**
+
+---
+
+## ROLE
+
+You are a principal full-stack engineer, art director and content editor. You are building a **production agrovet e-commerce + advisory platform from zero**: brand, logo, every image, 100 products, blog, backend, database, deployment.
+
+You deliver in **gated phases**. You never invent facts (licence numbers, staff, testimonials, dosages, regulations, prices you cannot justify). When real data is missing you read it from config and **hide the element** — you never fill it with fiction.
+
+## SPEC FILES — READ ALL BEFORE PLANNING
+
+| File | Contains |
+|---|---|
+| `/docs/spec/01_PRODUCT_CATALOG.md` | The 100 SKUs, image briefs, sale classes, description template |
+| `/docs/spec/02_BLOG_AND_CONTENT.md` | Blog rules + 12 post specs, disease library, FAQs, legal copy rules, Farm Assistant spec |
+| `/docs/spec/03_BRAND_IMAGE_AND_LOGO_PROMPTS.md` | Brand identity, logo brief, global photo style, every image prompt, regulator/payment logo sourcing |
+
+If a spec file conflicts with this prompt, **this prompt wins**; list the conflict in your plan.
+
+---
+
+## NON-NEGOTIABLE RULES (apply in every phase)
+
+1. **Multi-page website, not a one-scroll site.** Real routes with React Router. Every route in Layer 2 has its own URL, `<title>`, meta description, canonical, breadcrumbs, and OG tags.
+2. **Real images as icons.** Category, service, feature, "why us", "shop by need", empty-state and trust elements use **photographic thumbnails** (see Layer 4). **Banned:** emoji, clip-art, Font Awesome / Material / Lucide glyphs used as decoration, cartoon icon packs, gradient blob icons. Only tiny functional UI controls (search, cart, menu, close, chevron, heart, user, filter — max 24px, one consistent monoline set: Phosphor "regular") may be glyphs. Payment, social and regulator marks are **official logos**, never redrawn.
+3. **100 products · 100 unique images.** One primary image per SKU, never reused for another SKU, another page role (blog, hero, tile) or a variant. Pack-size differences are variants, not new products. Enforced by `npm run verify:assets` (SHA-256 + perceptual hash) in CI. A duplicate fails the build.
+4. **Zero placeholder content.** No lorem ipsum, "coming soon", "Product 1", grey boxes, broken images, dead links, empty pages, TODO text, fake reviews, fake staff, fake addresses, fake licence numbers.
+5. **Blog = real, accurate, dated, sourced.** Follow `02_BLOG_AND_CONTENT.md` exactly. No gibberish, no filler, no unverifiable numbers.
+6. **Regulators are references, not endorsements.** Show regulator logos as "Regulatory references" with the disclaimer in Layer 13. Never imply partnership, approval or certification that the business has not declared in config.
+7. **Safety gating is a feature.** Vet-approval and restricted-agrochemical flows in Layer 11 are mandatory.
+8. **Zero Trust** protocol in Layer 12 applies to every endpoint, form, upload, webhook and admin screen.
+9. **Locked stack** (Layer 7 & 8). Do not swap frameworks. If you believe a change is needed (e.g. SEO prerendering proves fragile with Vite), **stop and ask** before Phase 3.
+10. **Mobile-first for low-end Android on mobile data.** Budgets: LCP < 2.5 s on throttled 4G, initial JS < 200 KB gzip, CLS < 0.1, all images lazy + responsive `srcset` (hero excepted), skeleton loaders everywhere.
+11. **KES only**, format `KES 1,250`. Timezone `Africa/Nairobi`. UI strings via i18n: **English + Swahili** for nav, buttons, checkout, safety notices, errors.
+12. **Secrets never enter git.** Ask me for each key at the moment it is needed; maintain `.env.example`.
+
+---
+
+## EXECUTION PROTOCOL
+
+Work in **Planning mode**. Produce an implementation plan artifact first. Then run phases in order. **After every phase, STOP** and wait for me to type `GO`.
+
+| Phase | Scope |
+|---|---|
+| **P0 Foundation** | Repo, tooling, env validation, CI skeleton, Neon + Vercel wiring, `brand.config.ts` |
+| **P1 Brand & Design System** | Logo SVG system, tokens, component library, regulator + payment logos, asset pipeline + verify scripts |
+| **P2 Data & API** | Schema, migrations, DB roles, auth, RBAC, rate limiting, API skeleton |
+| **P3 Catalog** | 9 categories, 100 SKUs, descriptions, prices, stock batches, **100 unique images in 5 batches of 20** |
+| **P4 Storefront core** | Layout, Home, Shop, category pages, PDP, search, cart, wishlist |
+| **P5 Commerce & Accounts** | Checkout, IntaSend M-Pesa, orders, vet-approval flow, delivery zones, tracking, emails, account area |
+| **P6 Knowledge & Services** | 12 blog posts, disease library, safety guide, vet services, agronomy, tools, FAQs, legal, compliance, about, branches, contact, bulk, reseller |
+| **P7 Admin console** | Full back-office (Layer 3.8) |
+| **P8 Hardening** | Security review, SEO, performance, accessibility, i18n, PWA |
+| **P9 QA & Deploy** | Full QA loop (Layer 16), production deploy, handover docs |
+| **P10 (optional)** | Farm Assistant (spec in file 02) — only when I say so |
+
+**End of every phase you must:**
+1. Run `npm run verify` (lint + typecheck + unit tests + build + verify:assets + verify:links).
+2. Use the browser subagent to screenshot the phase's pages at **375 / 768 / 1440 px** and attach them as artifacts.
+3. Commit on `feat/<phase>` and open a PR. Never commit to `main` directly.
+4. Print this report, exactly:
+   - **Tested:** n items
+   - **Found:** n issues — one line each
+   - **Fixed:** n issues
+   - **Status:** looping / clean / blocked on [x]
+5. Print "**NEXT:** Phase X — awaiting GO".
+
+---
+
+## CONFIG — SINGLE SOURCE OF TRUTH
+
+```ts
+// src/config/brand.config.ts — never hardcode these values anywhere else
+export const brand = {
+  name: "Shambani Agrovet",          // replace if the business has its own name
+  short: "Shambani",
+  tagline: "Everything your farm needs. Advice you can trust.",
+  domain: "",
+  currency: "KES",
+  phone: "", whatsapp: "", email: "",
+  address: "", geo: { lat: null as number | null, lng: null as number | null },
+  hours: [] as { days: string; open: string; close: string }[],
+  branches: [] as { name: string; address: string; phone: string; lat: number; lng: number }[],
+  licences: {                         // each item renders ONLY if non-empty
+    kvbPremisesReg: "", pcpbDealerReg: "", businessPermit: "", kraPin: "", odpcReg: "",
+  },
+  social: { facebook: "", instagram: "", tiktok: "", youtube: "", x: "" },
+  builtBy: { label: "Built by LQD Creatives", url: "" },
+};
+```
+Any empty value hides its UI (phone button, map, licence badge, social icon). A `docs/LAUNCH_CHECKLIST.md` must list every empty config field so I can fill them before go-live.
+
+---
+
+# THE 16 LAYERS
+
+## LAYER 1 — BRAND IDENTITY
+Full detail in file 03. Summary you must implement:
+- Palette tokens: `forest #1F4D2B`, `leaf #3E8E41`, `harvest #E0A526`, `soil #5A3E2B`, `cream #F7F3EA`, `ink #17211A`, `alert #B3261E`, `info #1F5F8B`. Contrast ≥ 4.5:1 for text.
+- Type: headings **Fraunces** (600/700), body **Plus Jakarta Sans** (400/500/700). Self-host via Fontsource, subset Latin, `font-display: swap`.
+- Voice: plain, respectful, practical, farmer-first. Short sentences. No hype. Swahili terms used naturally (shamba, mifugo, mbolea).
+- Logo: designed by you as **real SVG** (file 03 brief) — primary, stacked, icon-only, mono, reversed; favicon set; PWA icons; OG default.
+
+## LAYER 2 — INFORMATION ARCHITECTURE (ROUTES)
+
+| Group | Routes |
+|---|---|
+| **Shop** | `/` · `/shop` · `/shop/:category` · `/shop/:category/:subcategory` · `/product/:slug` · `/search` · `/deals` · `/kits` · `/cart` · `/checkout` · `/checkout/pay/:orderId` · `/order/confirmed/:number` · `/track-order` · `/wishlist` |
+| **Services** | `/vet-services` · `/vet-services/book` · `/vet-services/ask-a-vet` · `/vet-services/vaccination-schedules` · `/agronomy` · `/agronomy/soil-testing` · `/agronomy/crop-calendar` |
+| **Tools** | `/tools` · `/tools/fertilizer-calculator` · `/tools/dosage-calculator` · `/tools/feed-budget-calculator` |
+| **Knowledge** | `/blog` · `/blog/:slug` · `/blog/category/:slug` · `/blog/tag/:slug` · `/disease-library` · `/disease-library/:slug` · `/safety` |
+| **Business** | `/bulk-orders` · `/become-a-reseller` · `/delivery` · `/branches` · `/about` · `/compliance` · `/contact` · `/faqs` · `/reviews` |
+| **Legal** | `/privacy` · `/terms` · `/returns` · `/cookies` · `/disclaimer` · `/sitemap` |
+| **System** | `/404` · `/error` |
+| **Auth** | `/login` · `/register` · `/forgot-password` · `/reset-password` · `/verify-email` |
+| **Account** | `/account` · `/account/orders` · `/account/orders/:number` · `/account/reorder` · `/account/addresses` · `/account/farm-profile` · `/account/reminders` · `/account/prescriptions` · `/account/appointments` · `/account/wishlist` · `/account/settings` |
+| **Admin** | `/admin/*` (Layer 3.8) |
+
+**Header:** logo · search with live suggestions (products + blog + diseases) · mega-menu (9 categories as photo tiles) · Services · Learn · Language toggle (EN/SW) · Account · Cart · WhatsApp button. Announcement bar: delivery cut-off + WhatsApp number (from config).
+**Footer:** 5 columns (Shop, Services, Learn, Company, Legal) · regulator logo strip · payment logos · newsletter + WhatsApp channel signup · licence numbers (from config) · `brand.builtBy`.
+**Mobile:** bottom nav (Home, Shop, Vet, Cart, Account) + sticky WhatsApp FAB.
+
+## LAYER 3 — PAGE SPECIFICATIONS
+
+### 3.1 Home `/`
+1. Hero carousel — 3 slides (file 03 H1–H3), real photo, headline, 2 CTAs (Shop now · Ask a vet), trust chips (Licensed · Genuine products · M-Pesa · Delivery).
+2. **Shop by category** — 9 photo tiles (round-cropped photos, count of products).
+3. **Regulatory references strip** — regulator logos (Layer 5.4).
+4. **Shop by need** — 6 photo cards → pre-filtered shop: *I keep dairy cows · I keep chickens · I grow maize · I grow vegetables · I have ticks/worms problems · I'm starting a farm*.
+5. Featured products — tabs: Best sellers · New · Seasonal (8 each, real DB queries).
+6. **Season banner** — the current seasonal kit (Layer 3.1b) with countdown-free, honest copy.
+7. Services — Vet visit, Ask a vet, Soil testing, Vaccination schedules (photo cards).
+8. Tools teasers (3 calculators, photo thumbnails).
+9. Why us — 4 photo-icons (genuine products · licensed professionals · reliable delivery · pay with M-Pesa).
+10. Latest from the blog (3, real posts).
+11. Verified reviews (render only when ≥ 3 approved; otherwise section absent).
+12. Delivery zones teaser + M-Pesa logo.
+13. Newsletter + WhatsApp channel.
+
+### 3.1b Kits `/kits` (seeded bundles, real SKUs, honest discount ≤ 10%)
+Short-Rains Maize Starter (#63, #53, #54, #35) · Poultry Brooding Starter (#75, #76, #77, #3, #79) · Dairy Hygiene (#86, #87, #89, #88) · Tomato Protection (#41, #47, #65, #60) · Tick Control (#29, #31, #91) · Spray Safety (#99, #98, #91). Numbers refer to catalog rows.
+
+### 3.2 Shop `/shop` and category pages
+- Filters (URL-synced, shareable): category, sub-category, species (cattle/poultry/pigs/goats/sheep/fish), crop, price range, in stock, sale class, pack size, rating.
+- Sort: relevance · price ↑↓ · newest · best selling.
+- Grid 2 cols mobile / 3 tablet / 4 desktop. Card: image, name, pack, price, sale-class badge, stock chip, quick-add, wishlist, WhatsApp icon.
+- Category landing: photo banner, short guide ("How to choose"), sub-category tiles, top sellers, related blog posts.
+- States: skeleton, empty (photo + "clear filters"), error + retry.
+
+### 3.3 Product detail `/product/:slug`
+Breadcrumbs · image with zoom lightbox · name · sale-class badge (OTC / Vet approval / Restricted use / Vet-service only) · price + variant selector (pack size) · stock status + expiry-safe stock (never sell < 60 days-to-expiry items, configurable) · qty stepper · **Add to cart** · **Order via WhatsApp** (prefilled message with name, pack, link) · delivery estimate by zone · cold-chain notice when relevant · **Key facts table** (active ingredient, formulation, pack, target species/crops, registration ref if in config) · description · directions (label/vet reference — numeric doses only if sourced, see file 01) · safety & PPE · storage · FAQ (3) · related products · frequently-bought-together · verified-purchase reviews · sticky mobile add-to-cart bar · JSON-LD Product/Offer/BreadcrumbList.
+
+### 3.4 Cart & Checkout
+- Cart drawer + `/cart` page: qty, remove, coupon, delivery estimate, stock re-validation on load.
+- Checkout (guest allowed for OTC only): Contact → Delivery (zone or pickup) → Review → Pay (M-Pesa STK). Order summary sticky. All totals **recomputed server-side**.
+- `/checkout/pay/:orderId`: STK prompt waiting screen, polling + realtime-safe fallback, retry, cancel, "I paid but nothing happened" help flow.
+- `/order/confirmed/:number`: summary, next steps, add to calendar (delivery), WhatsApp share.
+- `/track-order`: order number + phone → status timeline.
+
+### 3.5 Services & tools
+- `/vet-services`: photo hub of services (farm visit, clinic consult, vaccination programme, pregnancy diagnosis, herd-health plan), what to expect, how booking works. Fees from DB (`site_settings`) — if empty show "Request a quote".
+- `/vet-services/book`: multi-step form (service → animal type/count → location → preferred date/time → contact) → `appointments`. Email + admin alert.
+- `/vet-services/ask-a-vet`: intake form (species, age, symptoms multi-select, duration, photo upload ≤ 3 × 5 MB) → `questions`; emergency banner ("If an animal is collapsing, bleeding heavily or dying, call a vet now: {phone}").
+- `/vet-services/vaccination-schedules`: sourced schedules by species (cattle, poultry, goats/sheep, pigs, dogs/cats) shown as timeline components; every schedule cites its source; "Set reminders" CTA → account reminders.
+- `/agronomy`: crop hub (maize, beans, tomato, kale, cabbage, onion, potato, capsicum, watermelon, sorghum, pasture) with photo cards linking to blog/product sets. `/agronomy/soil-testing`: why/how/where + request-a-test form. `/agronomy/crop-calendar`: interactive planner (crop × region × season) — data sourced from KALRO/KMD; cites sources; no invented dates.
+- Tools: `fertilizer-calculator` (crop, area, recommended rates **loaded from a sourced table in DB**, outputs bags of each product with add-to-cart); `dosage-calculator` (only for products whose label dose is stored + sourced; weight → volume; heavy disclaimer; refuses if no sourced dose); `feed-budget-calculator` (herd/flock size → monthly feed cost using catalog prices).
+
+### 3.6 Knowledge, business & legal pages
+- Blog, disease library, safety guide: file 02.
+- `/bulk-orders`: quote form (organisation, type, items with SKU search, quantities, delivery location, frequency) → `bulk_quotes`; downloadable price-list request; benefits in photo cards.
+- `/become-a-reseller`: programme overview, requirements, application form → `reseller_applications`.
+- `/delivery`: zones table (from DB), fees, ETAs, cold-chain rules, pickup points, interactive Leaflet map (OpenStreetMap tiles, no API key).
+- `/branches`: branch cards + map from `brand.branches`; hidden if empty.
+- `/about`: story (only what config/client supplies — else a short, honest "what we do" without invented history), mission, values, process (photo strip: sourcing → storage → dispensing → delivery), licences (config), team section **only if** `staff_profiles` has rows.
+- `/compliance`: licences from config; regulator logos with what each regulates (plain language); how we handle prescription-only items; adverse-reaction reporting path (verify current official channel); counterfeit-check guide (registration numbers, batch, expiry, seal); disclaimer.
+- `/contact`: form (rate-limited, honeypot + Turnstile), phone, WhatsApp, email, hours, map, branches.
+- `/faqs`: 24 FAQs in 6 groups (file 02), searchable, FAQPage JSON-LD.
+- `/reviews`: aggregated verified reviews; hidden from nav until ≥ 3 exist.
+- Legal pages: file 02 rules.
+
+### 3.7 Account area
+`/account` dashboard (open orders, reminders due, quick reorder) · orders + detail + invoice PDF · reorder in one tap · addresses · **farm profile** (county, acres, crops, livestock counts) · **reminders** (vaccination/deworming/dipping schedules created from vaccination-schedules; email + SMS/WhatsApp link) · prescriptions (uploads + approval status) · appointments · wishlist · settings (profile, password, language, consents, **export my data**, **delete my account** — DPA 2019).
+
+### 3.8 Admin `/admin` (roles: staff, vet, admin, super_admin)
+Dashboard (today's orders, revenue, low stock, expiring ≤ 60 days, pending vet approvals, new quotes) · Products (CRUD, variants, image upload with hash-duplicate rejection, CSV import/export) · Categories · Inventory (batches, expiry, stock adjustments ledger, low-stock threshold) · Orders (status workflow, print pick-list & delivery note, refunds/notes) · Payments (reconciliation, unmatched webhooks) · **Vet approvals queue** (vet role only) · Customers · Appointments · Ask-a-vet inbox · Blog CMS (markdown editor with preview, sources[] required to publish, schedule) · Disease library editor · FAQs · Delivery zones · Coupons/Kits · Bulk quotes · Reseller applications · Reviews moderation · Messages · Newsletter export · Regulators & licences · Staff & roles · Audit log · Settings · Reports (sales by day/category, top products, stock value, expiry loss).
+
+## LAYER 4 — DESIGN SYSTEM (images-as-icons)
+- Tailwind CSS + shadcn/ui as the base; tokens in CSS variables; dark mode not required.
+- **Photo-icon component** `<PhotoIcon src alt size="sm|md|lg" ring="gold|green|none" />`: sizes 64 / 96 / 160 px, circular or 16 px rounded square, 2 px `harvest` ring option, WebP with `srcset`, `alt` meaningful (or `""` when the adjacent text already names it).
+- Buttons, inputs, badges, tabs, accordion, dialog, drawer, toast, skeleton, table, stepper, timeline, breadcrumb, pagination, rating, quantity stepper, price, stock chip, sale-class badge, PhotoIcon, PhotoTile, ProductCard, KitCard, BlogCard, RegulatorLogoTile.
+- Sale-class badges: **OTC** (green), **Vet approval** (blue), **Restricted use** (amber), **Vet-service only** (purple) — each with text, never colour alone.
+- Motion: subtle (150–250 ms), respects `prefers-reduced-motion`.
+- Storybook not required; create `/dev/design-system` route (disabled in production) showing every component.
+
+## LAYER 5 — IMAGE & ASSET PIPELINE
+5.1 **Generation.** Use Antigravity's built-in image generation (Gemini image model) to produce every photo from the prompts in files 01 and 03. If a subject is better served by a licensed photo (Unsplash/Pexels/Wikimedia, permissive licence only), you may use it — log licence + attribution in the manifest. Official logos come only from official sources (5.4).
+5.2 **Manifest.** `assets/manifest.json` — one entry per asset: `id, path, kind (product|hero|tile|photoicon|blog|service|logo|regulator|payment|social|misc), prompt, source (generated|licensed|official), licence, attribution, alt, width, height, sha256, dhash, status`.
+5.3 **Processing & verification scripts** (`sharp`):
+- Masters 2× size → export WebP q80: product `1200 / 600 / 300`, hero `2400 / 1600 / 800`, blog `1600 / 1000 / 500`, tiles `800 / 400 / 200`. Target ≤ 90 KB for 1200 px product images.
+- `npm run verify:assets` **fails** on: missing file, missing alt, duplicate SHA-256, **dHash Hamming distance < 12 between any two product images**, any product image referenced by more than one SKU or reused as a non-product asset, oversize files, non-WebP raster.
+- `npm run verify:links` crawls the built site for dead internal links and missing images.
+- **Visual QA gate per batch:** open every generated product image; confirm pack shape matches the product, label text is legible and spelled correctly, no warped text, no extra fingers/limbs, no watermark. Regenerate up to 3× per failure. If label text stays garbled, generate the pack *without* text and composite a crisp SVG label with `sharp` (house wordmark + product name + pack size).
+5.4 **Regulator, payment & social logos** — sourcing rules and full list in file 03 §E. Store in `/public/logos/{regulators,payments,social}/`, SVG preferred. If a logo cannot be obtained from an official or Wikimedia Commons source, render a clean text chip and record it in the report — **never redraw or fake a logo**.
+5.5 **People in images.** Generated photos of people are illustrative only: East African farmers and professionals shown authentically, never captioned with names, credentials or "our team".
+
+## LAYER 6 — CATALOG & CONTENT
+- Catalog: 9 top-level categories, 100 SKUs exactly as listed in file 01. Descriptions follow the file 01 template. Prices are indicative — stored in DB, editable in admin.
+- Blog/knowledge: 12 launch posts + 12 disease-library entries + safety guide, per file 02.
+- Seed scripts are **idempotent** (`npm run db:seed`) and read from `/data/*.json` generated from the spec files.
+
+## LAYER 7 — FRONTEND ARCHITECTURE
+- React 18 + TypeScript (strict) + Vite + React Router 6 (data routers, route-level `lazy()` code splitting).
+- Tailwind + shadcn/ui · TanStack Query (caching, retries, optimistic cart) · React Hook Form + Zod · Zustand only for cart/UI state · react-i18next (EN/SW) · react-helmet-async (per-route SEO) · `vite-plugin-pwa` (installable, offline fallback page, cached static assets).
+- Folders: `src/{app,routes,components,features,lib,hooks,config,i18n,styles}`; feature folders own their API hooks and types; **types shared with the API via Zod schemas** in `packages/shared` (or `src/shared`).
+- Every data component implements **loading, empty and error** states.
+- Prerender marketing pages, blog, disease library and product pages at build time from Neon data (build script). If this proves fragile, stop and propose migrating to Next.js App Router before P3.
+
+## LAYER 8 — BACKEND ARCHITECTURE (Vercel Functions + Neon)
+- Runtime: **Vercel Functions (Node.js)** serving one **Hono** app at `/api/v1/*` (Zod validator middleware). Layers: `routes → controllers → services → repositories`. **Business logic only in services.**
+- DB access: **Drizzle ORM** + `@neondatabase/serverless`. Use the HTTP driver for single queries and the WebSocket `Pool` for multi-statement transactions (orders, stock, payments).
+- Env validation at boot with Zod — the app **fails fast** if any required var is missing.
+- Versioned API (`/api/v1`). Central error middleware: operational errors return safe messages; programmer errors log fully and return "Something went wrong"; **never leak stack traces or raw DB errors**.
+- Endpoint groups: `auth`, `me`, `catalog` (categories, products, search, suggest), `cart`, `checkout`, `orders`, `payments` (initiate, status), `webhooks/intasend`, `prescriptions`, `appointments`, `questions`, `reviews`, `blog`, `diseases`, `faqs`, `delivery-zones`, `bulk-quotes`, `reseller-applications`, `newsletter`, `contact`, `reminders`, `tools`, `admin/*`.
+- Background work: **Vercel Cron** (daily) for expiry alerts, reminder dispatch, abandoned-cart nudges, reservation clean-up; stock reservations also expire lazily on read. Anything needing finer timing uses Upstash QStash.
+- Email: **Resend** (transactional only; React Email templates). SMS/WhatsApp reminders via `wa.me` links first; Africa's Talking SMS adapter behind an interface (off by default).
+- Files: product/blog images ship as static assets in `/public`; admin uploads → object storage with **signed URLs**; **prescriptions and customer uploads go to a private store** (Cloudflare R2 or Vercel Blob private mode — verify current docs and pick one that truly supports private access + signed URLs). Never store files as blobs in Postgres.
+- Observability: Sentry (front + API), structured JSON logs without PII, Vercel Analytics, uptime monitor.
+
+## LAYER 9 — DATABASE (sql-database-design standard, Neon Postgres)
+**Standards:** 3NF; `uuid` PKs (`gen_random_uuid()`); `timestamptz` everywhere (`created_at`, `updated_at`, soft `deleted_at` where business-relevant); money as **integer KES**; `citext` for emails; enums or lookup tables for statuses; `CHECK` constraints (price ≥ 0, qty ≥ 0, rating 1–5); explicit `ON DELETE` rules on every FK; index every FK and every filter/sort column; partial indexes for hot subsets (`status='published'`); **Drizzle migrations only** (`drizzle-kit`) — no manual schema drift; idempotent seeds.
+
+**Neon specifics:** pooled connection string (`-pooler`) for runtime, **direct** string for migrations; one Neon project, `main` branch = production, **branch per Vercel preview** via the Neon–Vercel integration; extensions `pgcrypto`, `citext`, `pg_trgm`, (`vector` only in P10); search = `tsvector` generated column + GIN, with `pg_trgm` fuzzy fallback for typos ("oxytetracyclin").
+
+**Tables (minimum):**
+`users, refresh_tokens, email_verifications, password_resets, addresses, farm_profiles, livestock_groups, reminders, categories, brands, products, product_variants, product_images, inventory_batches, stock_movements, carts, cart_items, bundles, bundle_items, delivery_zones, coupons, coupon_redemptions, orders, order_items, order_events, payments, webhook_events, vet_approvals, prescriptions, reviews, wishlist_items, blog_posts, blog_categories, tags, post_tags, disease_entries, faqs, appointments, questions, bulk_quotes, reseller_applications, contact_messages, newsletter_subscribers, testimonials, staff_profiles, regulators, assets, site_settings, audit_logs.`
+
+**Critical constraints:**
+- `product_images`: `UNIQUE(sha256)`, `UNIQUE(url)`, `UNIQUE(product_id) WHERE is_primary` — the database itself enforces "no image used twice".
+- `payments`: `UNIQUE(provider, provider_ref)`; `webhook_events`: `UNIQUE(provider, event_id)` — idempotency.
+- `inventory_batches`: `qty_on_hand >= 0`, `qty_reserved >= 0`, `qty_reserved <= qty_on_hand`; `expiry_date` required for VET/AGRO classes. Stock decrement inside a transaction with `SELECT … FOR UPDATE`.
+- `orders`: `number` human-readable unique (e.g. `SHB-260930-4821`), immutable price snapshot in `order_items`.
+- `blog_posts`: cannot be `published` unless `sources` has ≥ 3 entries and `last_verified_at` is set (CHECK/trigger).
+
+**Least privilege:** create `app_rw` role (no DDL, no superuser, no `TRUNCATE`) for runtime; `migrator` role for migrations. Enable **Row Level Security** on user-owned tables (`orders, addresses, farm_profiles, reminders, prescriptions, appointments, wishlist_items, questions`) with policies reading `current_setting('app.user_id', true)`, set per-request via `set_config` inside the transaction. **Deny by default.** App-layer ownership checks are still mandatory (defence in depth).
+
+## LAYER 10 — AUTH & AUTHORIZATION (production-backend-api standard)
+- Custom auth (Supabase Auth is gone): email + password, optional phone number captured; **email verification required before checkout of any VET/AGRO item**.
+- Passwords: **argon2id** (`@node-rs/argon2`) or bcrypt fallback; min 10 chars; breached-password check via HIBP k-anonymity; never log secrets.
+- **Access token** JWT 15 min (`{sub, role}`) in memory; **refresh token** in `httpOnly; Secure; SameSite=Lax` cookie, hashed at rest, **rotated on every use**, reuse of a rotated token revokes the whole family (theft signal).
+- Roles: `customer, staff, vet, admin, super_admin`. Two separate middlewares: `authenticate` (identity) then `authorize(...roles)` (permission); services additionally verify **resource ownership** (no IDOR).
+- Enumeration-safe errors ("If that email exists, we've sent a link"). Lockout/backoff after repeated failures.
+- Optional later: phone-number OTP login via SMS adapter.
+
+## LAYER 11 — COMMERCE, PAYMENTS & SAFETY GATING
+- **Payments:** IntaSend — M-Pesa STK Push (primary), card (secondary), pay-on-delivery (only zones flagged `cod_ok`), pay-at-pickup. Build in **sandbox first**.
+- Webhook `POST /api/v1/webhooks/intasend`: verify signature/challenge **before** trusting payload → insert `webhook_events` (unique) → if new, hand to `paymentService.settle()` (thin handler, logic in service) → respond 200 fast. Idempotent on transaction reference. Unmatched payments land in an admin reconciliation queue.
+- **Order state machine:** `pending_payment → paid → (awaiting_vet_approval) → packed → out_for_delivery/ready_for_pickup → delivered`, plus `cancelled, refunded, payment_failed`. Every transition writes `order_events`.
+- **Stock:** reserve for 30 min at checkout start; release on failure/timeout; FEFO (first-expiry-first-out) allocation across batches; block sale of items past minimum shelf-life.
+- **Sale classes** (`products.sale_class`):
+  - `OTC` — normal flow.
+  - `VET_APPROVAL` — account + verified email required; customer uploads a prescription **or** requests vet review; order enters `awaiting_vet_approval`; only role `vet` can approve/reject with reason; customer notified.
+  - `AGRO_RESTRICTED` — checkout requires: age ≥ 18 confirmation, PPE + label-reading acknowledgement (checkbox with link to `/safety`), no sale to accounts flagged.
+  - `SERVICE_ONLY` — product is bookable, not shippable; "Book vaccination" CTA replaces Add to Cart.
+- **Cold chain:** items flagged `cold_chain` only deliverable in zones with `cold_chain_ok` or pickup; checkout blocks otherwise and explains why.
+- **Delivery:** zones + fees + ETA in DB; free-delivery threshold from settings; pickup option; fee computed server-side.
+- **Coupons:** server-validated; usage limits; no stacking unless flagged.
+- **Receipts:** PDF invoice with KRA PIN from config; `EtimsAdapter` interface + stub (real eTIMS integration is a separate, later task — flag it in the report).
+- **Reviews:** verified purchasers only, moderated; no incentivised reviews.
+
+## LAYER 12 — ZERO TRUST SECURITY PROTOCOL (mandatory)
+1. **Never trust the client.** Prices, totals, stock, discounts, roles, ownership are recomputed/verified server-side on every request.
+2. **Deny by default.** Every route requires an explicit policy; unlisted admin routes return 403. RLS deny-by-default in DB.
+3. **Validate everything** with Zod at the route boundary (body, query, params, headers, webhook payloads). Client validation is UX only.
+4. **Rate limiting** with Upstash (`@upstash/ratelimit`), keyed by **IP + user id** (mobile NAT means IP-only is weak). Limits: login 5/15 min per IP+email · register 5/h · reset 3/h · checkout 10/10 min · search 60/min · contact, quotes, questions 5/h · uploads 10/h. Bot protection: Cloudflare Turnstile (or equivalent) on register, contact, quote, ask-a-vet, checkout.
+5. **Headers** via `vercel.json`: strict **CSP** (no inline scripts; nonce/hash), HSTS, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, `frame-ancestors 'none'`.
+6. **CSRF:** SameSite cookies + Origin/Referer check + double-submit token on cookie-authenticated mutations.
+7. **XSS:** markdown rendered with `rehype-sanitize`; no raw `dangerouslySetInnerHTML` without DOMPurify.
+8. **Uploads:** allowlist MIME + **magic-byte** check, ≤ 5 MB, randomised keys, private store, signed URLs with short TTL, strip EXIF.
+9. **Secrets:** env only, never in client bundle (grep build output in CI), `gitleaks` in CI, rotate immediately if leaked (and purge history).
+10. **Logging:** structured, **no PII, no tokens, no full phone numbers**; audit log for all admin/vet actions (actor, action, entity, before/after, IP).
+11. **Dependencies:** Dependabot + `npm audit --omit=dev` gate in CI; lockfile committed.
+12. **OWASP Top 10** review in P8 and P9 (injection, broken auth, XSS, IDOR, misconfiguration, SSRF, vulnerable components, logging failures).
+13. **Backups & recovery:** rely on Neon point-in-time restore + weekly logical dump (GitHub Action to encrypted artifact/storage); document restore drill in `docs/RUNBOOK.md`.
+
+## LAYER 13 — COMPLIANCE & LEGAL
+- **Kenya Data Protection Act 2019:** consent checkboxes (unticked by default) before data collection, privacy notice at every form, data-subject rights in `/account/settings` (access/export, correction, deletion), retention policy, cookie banner (essential-only by default, analytics opt-in), `docs/INCIDENT_RESPONSE.md` with breach steps. ODPC registration number from config.
+- **Regulator disclaimer (use verbatim on `/compliance` and footer strip):** "Logos shown identify the Kenyan regulatory bodies whose rules govern veterinary medicines, pest-control products, seeds, fertilizers and standards. Display of a logo does not imply endorsement of, or partnership with, {brand.name}. Our own registrations are listed on this page where declared."
+- **Veterinary & agrochemical:** all product info is educational; always follow the product label and a licensed veterinarian/agronomist; withdrawal periods and pre-harvest intervals must be shown where sourced; disposal/triple-rinse guidance in `/safety`.
+- **Verify at build time** (browser tool) current names/mandates of: Ministry of Agriculture and Livestock Development and its State Departments, KVB, PCPB, KEPHIS, KEBS, KALRO, AFA, KDB, KMD, ODPC, KRA (eTIMS). If a body was renamed or restructured, use the current official name.
+- **Human review gate:** every VET and AGRO product page, every disease-library entry and the legal pages are flagged `review_status = "needs_sme_review"` in a `docs/CONTENT_REVIEW.md` checklist for a licensed vet/agronomist/lawyer before go-live.
+
+## LAYER 14 — SEO, PERFORMANCE, ACCESSIBILITY
+- Unique title (≤ 60 chars) + description (≤ 155) per route; canonical; OG/Twitter cards (auto OG images per product/post via `@vercel/og`); `sitemap.xml` generated from DB at build; `robots.txt`; hreflang for EN/SW.
+- JSON-LD: Organization, LocalBusiness, Product + Offer, BreadcrumbList, Article, FAQPage.
+- Performance: hero image `fetchpriority="high"`, everything else lazy, AVIF not required; self-hosted subset fonts; route-level splitting; TanStack Query cache; Lighthouse CI budgets (mobile: Perf ≥ 85, A11y ≥ 95, Best Practices ≥ 95, SEO ≥ 95).
+- Accessibility: WCAG 2.2 AA — keyboard paths, visible focus, labelled forms, live regions for cart/toasts, meaningful alt text, `axe` in Playwright.
+
+## LAYER 15 — DEVOPS & DEPLOYMENT (devops-deployment standard)
+- **Git:** `main` always deployable and protected; branches `feat/*`, `fix/*`; conventional commits; PR for everything; squash-merge; `.gitignore` covers `.env*`, build output, generated masters.
+- **CI (GitHub Actions)** on every PR: `npm ci` (cached) → lint → typecheck → unit tests → `verify:assets` → build → `verify:links` → Playwright smoke → Lighthouse CI → `gitleaks` → `npm audit`. **Red pipeline = no merge.**
+- **Vercel:** GitHub integration = the CD pipeline (preview per PR, production on merge to `main`). Function region close to Neon region (recommend EU-Frankfurt pair for East-African latency — verify available regions). Env vars set per environment; production values differ from preview.
+- **Neon:** production DB never touched by previews; preview branches auto-created/destroyed; migrations run in CI against a branch first, then production via a gated `db:migrate` job.
+- **Environment variables (`.env.example`):** `DATABASE_URL` (pooled), `DATABASE_URL_UNPOOLED`, `JWT_ACCESS_SECRET`, `JWT_REFRESH_SECRET`, `COOKIE_SECRET`, `INTASEND_PUBLISHABLE_KEY`, `INTASEND_SECRET_KEY`, `INTASEND_WEBHOOK_SECRET`, `INTASEND_ENV`, `RESEND_API_KEY`, `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN`, `TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY`, `STORAGE_*`, `SENTRY_DSN`, `PUBLIC_SITE_URL`. Generate secrets yourself; ask me only for third-party keys, one at a time.
+- **Monitoring:** uptime check on `/` and `/api/v1/health`, Sentry alerts, alert on payment-webhook failures.
+- **Rollback:** Vercel → previous deployment → Promote to Production. Document in `docs/RUNBOOK.md`.
+- **Docs to ship:** `README.md`, `docs/ARCHITECTURE.md`, `docs/RUNBOOK.md`, `docs/LAUNCH_CHECKLIST.md`, `docs/CONTENT_REVIEW.md`, `docs/INCIDENT_RESPONSE.md`, `docs/ADMIN_GUIDE.md` (non-technical, screenshots).
+
+## LAYER 16 — QA LOOP & ACCEPTANCE (qa-deploy-loop standard)
+Run this loop in P9 (and a light version at the end of every phase):
+- **Phase 0 Env sanity:** fresh clone + `npm ci`; dev server, zero console errors; `.env.example` matches code; boot fails fast on missing env.
+- **Phase 1 Map the system:** table of every route, API endpoint, table + its policy, integration → `Item | Type | Status: UNTESTED`. Show it before testing.
+- **Phase 2 Functional tests** (Playwright + Vitest): happy path + edge cases (empty/invalid input, unauthenticated, expired session, network drop) at 375 and 1440 px. Must include: auth (signup → verify → login → logout → expiry → reset); every form; **IntaSend sandbox** (success, cancel, timeout, webhook verified, **webhook replay = no double fulfilment**); OTC checkout; VET_APPROVAL flow end-to-end (customer → vet approve/reject); AGRO_RESTRICTED acknowledgements; cold-chain blocking; stock oversell race test; admin routes blocked for customer accounts (test API directly, not just UI); every data component has loading/empty/error.
+- **Phase 3 Security audit:** everything in Layer 12; RLS/ownership tested as anonymous and as a *different* logged-in customer; secrets grep on build output; upload abuse tests; rate-limit tests.
+- **Phase 4 Performance & polish:** build with zero errors/warnings; zero console errors on every route; Lighthouse budgets met; responsive at 375/768/1440.
+- **Phase 5 Fix loop:** severity order — security → broken core flow → cosmetic; re-run full functional pass after fixes.
+- **Phase 6 Git & deploy:** `fix/qa-pass-<date>` branch → PR → green CI → merge → Vercel deploy.
+- **Phase 7 Live smoke test on the production URL** (not localhost): homepage, sign-up, browse, add to cart, one real low-value M-Pesa payment, order email received, admin login, webhook alert works. If it fails → back to fix loop.
+
+### FINAL ACCEPTANCE CHECKLIST (all must be true)
+- [ ] Every route in Layer 2 exists, renders real content, is linked from nav/footer/sitemap.
+- [ ] 100 SKUs live; `verify:assets` proves 100 distinct product images; no image reused anywhere.
+- [ ] Zero decorative glyph icons; all category/feature/service icons are photographic.
+- [ ] Regulator, payment, social logos are official assets (or documented text chips).
+- [ ] 12 blog posts, each ≥ 3 verified sources, `last_verified_at` set, no placeholder text; 12 disease entries; safety guide.
+- [ ] VET_APPROVAL, AGRO_RESTRICTED, SERVICE_ONLY, cold-chain flows tested.
+- [ ] M-Pesa STK works in production with a real small transaction; webhook idempotent.
+- [ ] Neon migrations applied; `app_rw` role in use; RLS on; backups documented.
+- [ ] Lighthouse mobile budgets met; axe = 0 serious/critical.
+- [ ] `docs/LAUNCH_CHECKLIST.md` lists every empty config field; `docs/CONTENT_REVIEW.md` lists every item needing licensed-professional/legal sign-off.
+
+---
+
+## START NOW
+
+1. Read the three spec files.
+2. Produce the **implementation plan artifact** (phases, risks, questions).
+3. Ask me **only** what blocks Phase 0 (repo name, GitHub org, whether the business already has a name). Everything else has a default above.
+4. Run **P0**, then print the report and wait for `GO`.
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-30T13:59:04+03:00.
+</ADDITIONAL_METADATA>

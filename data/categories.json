@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "animal-health",
+    "name": "Animal Health",
+    "description": "Veterinary medicines, vaccines, and dewormers."
+  },
+  {
+    "slug": "animal-feeds",
+    "name": "Animal Feeds & Supplements",
+    "description": "High-quality feeds, mineral blocks, and vitamins for all livestock."
+  },
+  {
+    "slug": "crop-protection",
+    "name": "Crop Protection",
+    "description": "Herbicides, insecticides, and fungicides for healthy crops."
+  },
+  {
+    "slug": "seeds",
+    "name": "Seeds & Seedlings",
+    "description": "Certified seeds for high-yield farming."
+  },
+  {
+    "slug": "fertilizers",
+    "name": "Fertilizers & Soil Health",
+    "description": "Plant nutrition and soil conditioners."
+  },
+  {
+    "slug": "equipment",
+    "name": "Farm Equipment & Tools",
+    "description": "Sprayers, feeders, drinkers, and protective gear."
+  },
+  {
+    "slug": "public-health",
+    "name": "Public Health",
+    "description": "Pest control solutions for homes and farms."
+  },
+  {
+    "slug": "pet-care",
+    "name": "Pet Care",
+    "description": "Food, care, and accessories for dogs and cats."
+  },
+  {
+    "slug": "biosecurity",
+    "name": "Biosecurity & Hygiene",
+    "description": "Disinfectants and hygiene products for farm security."
+  }
+]

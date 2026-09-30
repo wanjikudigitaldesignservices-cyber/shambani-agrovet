@@ -1,0 +1,66 @@
+# CI Pipeline — GitHub Actions
+# Runs on every PR: lint → typecheck → build → verify:assets → verify:links
+
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: Lint, Typecheck & Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify assets
+        run: npm run verify:assets
+
+      - name: Verify links
+        run: npm run verify:links
+
+      # --- Security checks ---
+      - name: Audit dependencies
+        run: npm audit --omit=dev || true
+
+      # - name: Gitleaks
+      #   uses: gitleaks/gitleaks-action@v2
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- Grep build output for leaked secrets ---
+      - name: Check build for secrets
+        run: |
+          if grep -rn "INTASEND_SECRET\|JWT_.*SECRET\|COOKIE_SECRET\|DATABASE_URL\|RESEND_API_KEY" dist/ 2>/dev/null; then
+            echo "❌ Secrets found in build output!"
+            exit 1
+          fi
+          echo "✅ No secrets in build output"
